@@ -1,0 +1,118 @@
+.footer {
+	border-top: 2px solid #fff;
+	background-color: #f1f1f2;
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	&__main {
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+
+	&__menu-list, &__title {
+		font-weight: 500;
+	}
+
+	&__title {
+
+		&--time {
+			margin-top: 22px;
+		}
+	}
+
+	&__menu-item {
+
+		&:nth-child(n + 2) {
+			margin-top: 20px;
+		}
+	}
+
+	&__animals-list {
+		margin-top: 15px;
+		columns: 2;
+	}
+
+	&__animals-item {
+
+		&:nth-child(n + 2) {
+			margin-top: 15px;
+		}
+	}
+
+	&__phone-list, &__time, &__address {
+		margin-top: 10px;
+	}
+
+	&__phone-item {
+		margin-top: 5px;
+	}
+
+	&__bottom {
+		border-top: 1px solid #ccdbed;
+	}
+
+	&__bottom-container {
+		display: flex;
+		align-items: center;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		font-size: 13px;
+		line-height: 16px;
+		opacity: 0.5;
+		font-weight: 700;
+	}
+
+	&__copyright {
+		margin-left: 60px;
+	}
+
+	&__madein {
+		margin-left: 90px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 25 * 0.001em;
+
+		a {
+			margin-left: 16px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.footer {
+
+		&__col-phones, &__col-address {
+			margin-top: 40px;
+		}
+
+		&__copyright {
+			margin-left: 30px;
+		}
+
+		&__madein {
+			margin-left: 40px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.footer {
+		text-align: center;
+
+		&__col-catalog {
+			margin-top: 40px;
+		}
+
+		&__bottom-container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__copyright, &__madein {
+			margin-left: 0;
+			margin-top: 20px;
+		}
+	}
+}

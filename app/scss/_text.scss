@@ -1,0 +1,46 @@
+b, strong {
+	font-weight: 700;
+}
+
+i, em {
+	font-style: italic;
+}
+
+.txt-bebas {
+	letter-spacing: 10 * 0.001em;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 700;
+	color: #333;
+
+	span {
+		color: #f08921;
+	}
+}
+
+.txt {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.txt-md {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.txt-gray {
+	color: #666;
+}
+
+.h2 {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 700;
+	color: #333;
+	font-size: 50px;
+}
+
+@include media-breakpoint-down(sm) {
+	.h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+}

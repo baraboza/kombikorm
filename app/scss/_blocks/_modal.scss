@@ -1,0 +1,15 @@
+.modal {
+	max-width: 340px;
+	position: relative;
+
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		font-weight: 700;
+		z-index: 1;
+		cursor: pointer;
+		font-size: 30px;
+		@include hover-opacity;
+	}
+}

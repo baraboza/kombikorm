@@ -1,0 +1,9 @@
+.article {
+
+	p {
+		
+		&:nth-child(n + 2) {
+			margin-top: 25px;
+		}
+	}
+}

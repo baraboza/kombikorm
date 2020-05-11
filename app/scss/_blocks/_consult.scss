@@ -1,0 +1,143 @@
+.consult {
+	background-image: url('../img/consult-bg.jpg');
+	background-size: cover;
+	background-position: 50% 0;
+	padding: 40px 0 48px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__left {
+		margin-top: 40px;
+	}
+
+	&__title {
+		max-width: 570px;
+		font-size: 72px;
+		line-height: 87px;
+	}
+
+	&__circle-wrap {
+		margin-top: -25px;
+		margin-left: 405px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 73px;
+			right: 101px;
+			width: 338px;
+			height: 245px;
+			background-image: url('../img/consult-corn.png');
+			background-size: 100% 100%;
+		}
+	}
+
+	&__circle {
+		position: relative;
+		@include circle(219px);
+		@include flex-center;
+		background-color: #76c75e;
+		color: #fff;
+		text-align: center;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 22px;
+		line-height: 30px;
+		box-shadow:
+			0 0 0 21px rgba(#fff, 0.5),
+			0 0 0 48px rgba(#fff, 0.5);
+
+		b {
+			font-size: 30px;
+			line-height: 37px;
+		}
+	}
+
+	&__form {
+		max-width: 340px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.consult {
+
+		&__circle-wrap {
+			margin-left: 300px;
+			margin-top: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.consult {
+
+		&__title {
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+		&__circle-wrap {
+			margin-left: 30px;
+		}
+
+		&__circle {
+			box-shadow: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.consult {
+
+		&__container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__left {
+			margin-top: 0;
+		}
+
+		&__title {
+			font-size: 30px;
+			line-height: 36px;
+			text-align: center;
+		}
+
+		&__circle-wrap {
+			margin-left: 0;
+			margin-top: 10px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__circle {
+			margin-left: auto;
+			margin-right: auto;
+			width: 160px;
+			height: 160px;
+			font-size: 18px;
+			line-height: 24px;
+
+			b {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+
+		&__form {
+			width: 100%;
+			margin-top: 20px;
+
+			.form__inner {
+				padding: 25px;
+			}
+		}
+	}
+}

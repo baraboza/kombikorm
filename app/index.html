@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<meta name="theme-color" content="#000">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<a href="#" class="header__logo">
+			<img src="img/logo.png" alt="Energy">
+		</a>
+		<p class="header__title">
+			Производство и продажа 
+			кормов для сельхоз
+			животных и птиц в Крыму 
+			и Краснодарском крае
+		</p>
+		<ul class="header__nav-list">
+			<li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Продукция</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Прайс</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и оплата</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Дилерам</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Полезные статьи</a></li>
+			<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+		</ul>
+		<div class="header__time-and-request-call">
+			<p class="header__time">ПН — ПТ: 8:00 - 17:30</p>
+			<a href="#request-call" class="header__request-call js-modal-open">Заказать звонок</a>
+		</div>
+		<ul class="header__phone-list">
+			<li class="header__phone-item"><a href="tel:+79787358959" class="header__phone-link">+7 (978) 735-89-59</a></li>
+			<li class="header__phone-item"><a href="tel:+79787358957" class="header__phone-link">+7 (978) 735-89-57</a></li>
+		</ul>
+		<span class="header__nav-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+	</header>
+
+	<main>
+		<section class="init">
+			<div class="init__main">
+				<p class="init__title txt-bebas">Более 30 видов <span>полнорационных</span> комбикормов</p>
+				<p class="init__desc txt-bebas">для всех сельскохозяйственных животных, птиц и рыб</p>
+				<p class="init__delivery txt"><b>Бесплатная</b> доставка и разгрузка по Крыму</p>
+				<ol class="init__list">
+					<li class="init__item">
+						<div class="init__item-box txt">
+							<b>Производим корма по всем<br>
+							стандартам ГОСТ</b><br>
+							на собственном автоматизи-<br>
+							рованном заводе с 2016 года
+						</div>
+					</li>
+					<li class="init__item">
+						<div class="init__item-box txt">
+							<b>Создали рецептуры с учетом <br>
+							возрастных потребностей,</b> <br>
+							которые включают в себя все <br>
+							необходимые минералы <br>
+							и микроэлементы
+						</div>
+					</li>
+					<li class="init__item">
+						<div class="init__item-box txt">
+							<b>Cнизим себестоимость <br>
+							выращивания животных</b> <br>
+							и птиц,за счет уменьшения <br>
+							расхода комбикорма на кг <br>
+							прироста массы 
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<div class="animals">
+			<div class="animals__container">
+				<div class="animals__img-box">
+					<img src="img/animals-image-1.png" alt="" class="animals__image">
+				</div>
+				<ul class="animals__list">
+					<li class="animals__item">
+						<div class="animals__item-box active" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/кур_1.svg" alt="" class="animals__item-icon">
+								<img src="img/кур.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для бройлеров</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="https://pngimg.com/uploads/turkey/turkey_PNG58582.png">
+							<div class="animals__item-icon-box">
+								<img src="img/инд_1.svg" alt="" class="animals__item-icon">
+								<img src="img/инд.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для индеек</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="https://pngimg.com/uploads/duck/duck_PNG5011.png">
+							<div class="animals__item-icon-box">
+								<img src="img/утк_1.svg" alt="" class="animals__item-icon">
+								<img src="img/утк.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для уток</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="https://lh3.googleusercontent.com/proxy/7yw7VnBUU6Vh8QOGbdX5eBE45Z67NeqT1VPm21O2DMCj4862FO6iIXKNnBqBEzyBKWIuvIK2F6d0WcI5CBIa2Cjx5NssFPTdysWw">
+							<div class="animals__item-icon-box">
+								<img src="img/несушк_1.svg" alt="" class="animals__item-icon">
+								<img src="img/несушк.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для несушек</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/теленок_1.svg" alt="" class="animals__item-icon">
+								<img src="img/теленок.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для телят</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/свин_1.svg" alt="" class="animals__item-icon">
+								<img src="img/свин.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для свиней</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/крол_1.svg" alt="" class="animals__item-icon">
+								<img src="img/крол.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для кролей</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/переп_1.svg" alt="" class="animals__item-icon">
+								<img src="img/переп.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для перепелок</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/собак_1.svg" alt="" class="animals__item-icon">
+								<img src="img/собак.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Для собак</span></p>
+						</div>
+					</li>
+					<li class="animals__item">
+						<div class="animals__item-box" data-image="img/animals-image-1.png">
+							<div class="animals__item-icon-box">
+								<img src="img/мешок_1.svg" alt="" class="animals__item-icon">
+								<img src="img/мешок.svg" alt="" class="animals__item-icon-active">
+							</div>
+							<p class="animals__item-title"><span>Универсальный</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="feed-types">
+			<div class="feed-types__text">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<p class="h2">Комбикорма</p>
+							<div class="feed-types__text-article article txt txt-gray">
+								<p>Полноценный набор ключевых питательных элементов  может обеспечить только комбинированная смесь, включающая не только белки, жиры и углеводы, но и минерально-витаминные компоненты.</p>
+								<p>На разных этапах жизни  нужна разная пища (комбикорм), соответствующая  потребностям на той или иной стадии роста. Под каждый вид животных разработаны комбикорма, которые объединены в линейки.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="feed-types__list-wrap container">
+				<ul class="feed-types__list row">
+					<li class="feed-types__item col-lg-4">
+						<div class="feed-types__item-box">
+							<p class="feed-types__item-head">
+								<img src="img/feed-types1.png" alt="">
+								<span>Старт</span>
+							</p>
+							<p class="feed-types__item-text txt txt-gray">В первые недели жизни закладывается основа скелета и начинается рост мышечной массы, особенно важны в это время правильное кормление, минеральные добавки и клетчатка, что и учтено в линейке "Старт".</p>
+						</div>
+					</li>
+					<li class="feed-types__item col-lg-4">
+						<div class="feed-types__item-box">
+							<p class="feed-types__item-head">
+								<img src="img/feed-types2.png" alt="">
+								<span>Рост</span>
+							</p>
+							<p class="feed-types__item-text txt txt-gray">Следующие недели идёт развитие согласно породным характеристикам, активный рост, потому в линейке "Рост" пища  содержит как можно больше «строительного материала» (белков, сложных углеводов, аминокислот)</p>
+						</div>
+					</li>
+					<li class="feed-types__item col-lg-4">
+						<div class="feed-types__item-box">
+							<p class="feed-types__item-head">
+								<img src="img/feed-types3.png" alt="">
+								<span>Финиш</span>
+							</p>
+							<p class="feed-types__item-text txt txt-gray">На последних сроках необходимо следить за гармоничным развитием, чтобы не допустить ожирения или наоборот потери массы. Линейка "Финиш" имеет сбалансированный состав, который содержит максимум питательных веществ.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="feed-info container">
+			<div class="row align-items-center">
+				<div class="feed-info__col-image col-5">
+					<img src="img/feed-info.jpg" alt="">
+				</div>
+				<div class="col-md-7">
+					<div class="feed-info__right-box">
+						<ul class="feed-info__list txt-gray txt-md">
+							<li class="feed-info__item">Все линейки комбикормов обогащены микроэлементами, витаминами и прочими полезными веществами, но в разных пропорциях</li>
+							<li class="feed-info__item">За счет инновационной технологии гранулирования - увеличивается усвояемость кормов на 20%</li>
+							<li class="feed-info__item">Входящие в состав комбикорма компоненты увеличивают безопасность, стерильность и срок хранения</li>
+						</ul>
+						<a href="#" target="_blank" class="feed-info__download-pricelist button">Скачать прайс</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consult">
+			<div class="consult__container container">
+				<div class="consult__left">
+					<p class="consult__title txt-bebas">Получите <span>бесплатную консультацию</span></p>
+					<div class="consult__circle-wrap">
+						<div class="consult__circle">
+							<span>
+								<b>по подбору<br>
+								кормов</b><br>
+								и рекомендации<br>
+								по кормлению
+							</span>
+						</div>
+					</div>
+				</div>
+				<form class="consult__form form">
+					<div class="form__inner">
+						<p class="form__title txt-md">Заполните форму и наш специалист  свяжется с Вами в ближайшее время</p>
+						<input type="text" class="form__input input" placeholder="Ваше имя">
+						<input type="email" class="form__input input" placeholder="Ваша почта">
+						<input type="tel" class="form__input input" placeholder="+7 (___) ___-__-__">
+						<input type="submit" class="form__button button" value="Получить консультацию">
+						<div class="form__consent-wrap">
+							<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="how-order container">
+			<p class="how-order__title h2">Как заказать комбикорм «Energy» ?</p>
+			<ul class="how-order__list row">
+				<li class="how-order__item col-lg-4 col-xl-3">
+					<div class="how-order__item-box">
+						<span class="how-order__icon"></span>
+						<span class="how-order__number"></span>
+						<p class="how-order__item-text txt-md">
+							Оставить заявку на сайте  <br>
+							или позвонить по номеру <br>
+							+7 (978) 735-89-57
+						</p>
+					</div>
+				</li>
+				<li class="how-order__item col-lg-4 col-xl-3">
+					<div class="how-order__item-box">
+						<span class="how-order__icon"></span>
+						<span class="how-order__number"></span>
+						<p class="how-order__item-text txt-md">
+							Менеджер поможет <br>
+							с выбором и оформит заказ
+						</p>
+					</div>
+				</li>
+				<li class="how-order__item col-lg-4 col-xl-3">
+					<div class="how-order__item-box">
+						<span class="how-order__icon"></span>
+						<span class="how-order__number"></span>
+						<p class="how-order__item-text txt-md">
+							Доставим в течение <br>
+							1-2 дней
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="info">
+			<div class="container">
+				<p class="info__title h2">Полезная информация</p>
+				<ul class="info__list row">
+					<li class="info__item col-lg-4">
+						<a href="#" class="info__item-box">
+							<div class="info__img-box">
+								<img src="img/info-item1.jpg" alt="">
+							</div>
+							<div class="info__content">
+								<p class="info__item-title">Уход за цыплятами возрастом до 1 месяца</p>
+								<p class="info__item-desc txt txt-gray">Уход за цыплятами достаточно сложный, но взять цыплят из инкубатора и покормить их 3-4 месяца до зрелого возраста намного ....</p>
+							</div>
+						</a>
+					</li>
+					<li class="info__item col-lg-4">
+						<a href="#" class="info__item-box">
+							<div class="info__img-box">
+								<img src="img/info-item1.jpg" alt="">
+							</div>
+							<div class="info__content">
+								<p class="info__item-title">Особенности конструирования курятника и гнезд</p>
+								<p class="info__item-desc txt txt-gray">Гнезда можно делать абсолютно любые относительно формы и размещать их в удобном для вас месте, главное всегда ...</p>
+							</div>
+						</a>
+					</li>
+					<li class="info__item col-lg-4">
+						<a href="#" class="info__item-box">
+							<div class="info__img-box">
+								<img src="img/info-item1.jpg" alt="">
+							</div>
+							<div class="info__content">
+								<p class="info__item-title">Профилактика заболеваний и влияние на яйценосность птицы</p>
+								<p class="info__item-desc txt txt-gray">Если все же случилось так, что птица заболела, ее надо как можно быстрее вылечить и предотвратить распространение...</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#">О нас</a></li>
+						<li class="footer__menu-item"><a href="#">Прайс</a></li>
+						<li class="footer__menu-item"><a href="#">Доставка и оплата</a></li>
+						<li class="footer__menu-item"><a href="#">Дилерам</a></li>
+						<li class="footer__menu-item"><a href="#">Полезные статьи</a></li>
+						<li class="footer__menu-item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__col-catalog col-md-6 col-lg-4">
+					<p class="footer__title">Продукция</p>
+					<ul class="footer__animals-list txt">
+						<li class="footer__animals-item"><a href="#">Для бройлеров</a></li>
+						<li class="footer__animals-item"><a href="#">Для индеек</a></li>
+						<li class="footer__animals-item"><a href="#">Для телят</a></li>
+						<li class="footer__animals-item"><a href="#">Для кролей</a></li>
+						<li class="footer__animals-item"><a href="#">Для несушек</a></li>
+						<li class="footer__animals-item"><a href="#">Для перепелок </a></li>
+						<li class="footer__animals-item"><a href="#">Для свиней</a></li>
+						<li class="footer__animals-item"><a href="#">Для уток</a></li>
+					</ul>
+				</div>
+				<div class="footer__col-phones col-md-6 col-lg-3">
+					<p class="footer__title">Телефоны:</p>
+					<ul class="footer__phone-list txt">
+						<li class="footer__phone-item"><a href="tel:+79787358959">+7 (978) 735-89-59</a></li>
+						<li class="footer__phone-item"><a href="tel:+79787358957">+7 (978) 735-89-57</a></li>
+					</ul>
+					<p class="footer__title footer__title--time">Режим работы:</p>
+					<p class="footer__time txt">ПН — ПТ 8:00-18:00</p>
+				</div>
+				<div class="footer__col-address col-md-6 col-lg-2">
+					<p class="footer__title">Адрес:</p>
+					<p class="footer__address txt">
+						Республика Крым,<br>
+						пгт Красногвардейское,<br>
+						ул. Островского, 11б  
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__policy"><a href="#" target="_blank">Политика конфиденциальности</a></p>
+				<p class="footer__copyright">г. Симферополь © Copyright  2020 г.</p>
+				<p class="footer__madein">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" height="22" alt="Sheer"></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="request-call" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<span class="modal__close">x</span>
+				<div class="form__inner">
+					<p class="form__title txt-md">Заказать звонок</p>
+					<input type="text" class="form__input input" placeholder="Ваше имя">
+					<input type="tel" class="form__input input" placeholder="+7 (___) ___-__-__">
+					<input type="submit" class="form__button button" value="Отправить">
+					<div class="form__consent-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

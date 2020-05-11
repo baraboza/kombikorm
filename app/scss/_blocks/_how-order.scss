@@ -1,0 +1,121 @@
+.how-order {
+	padding-top: 140px;
+	padding-bottom: 150px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../img/how-order-image.png');
+		width: 528px;
+		height: 352px;
+		bottom: -8px;
+		right: -140px;
+	}
+
+	&__list {
+		margin-top: 115px;
+	}
+
+	&__item {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 9px;
+			left: 25px;
+			right: 25px;
+			bottom: -9px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 10px 15px rgba(#886447, 0.2);
+			transition: transform 0.2s;
+			opacity: 0.85;
+		}
+
+		&:hover {
+
+			&::before, .how-order__number {
+				transform: translate(0, -5px);
+			}
+		}
+
+		@for $i from 1 through 3 {
+			&:nth-child(#{$i}) {
+
+				.how-order__icon {
+					background-image: url('../img/how-order-icon-#{$i}.png');
+
+					@if $i == 3 {
+						width: 48px;
+						height: 40px;
+					}
+				}
+
+				.how-order__number {
+					background-image: url('../img/0#{$i}.png');
+
+					@if $i == 1 {
+						width: 70px;
+					}
+				}
+			}
+		}
+	}
+
+	&__item-box {
+		padding: 85px 30px 40px;
+		background-color: #fff;
+		background-image: linear-gradient(58deg, rgba(#fbfbfc, 1), rgba(#fbfbfc, 0));
+		box-shadow: 0 3px 4px rgba(194,194,195,0.2);
+		height: 100%;
+		border-radius: 10px;
+		position: relative;
+		font-weight: 500;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 13px;
+		left: 30px;
+		width: 42px;
+		height: 41px;
+	}
+
+	&__number {
+		position: absolute;
+		right: 60px;
+		top: -19px;
+		width: 76px;
+		height: 74px;
+		transition: transform 0.2s;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.how-order {
+
+		&__item {
+
+			&:nth-child(n + 2) {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.how-order {
+		padding-top: 30px;
+		padding-bottom: 40px;
+
+		&::before {
+			display: none;
+		}
+
+		&__list {
+			margin-top: 50px;
+		}
+	}
+}

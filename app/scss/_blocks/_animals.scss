@@ -1,0 +1,284 @@
+.animals {
+	position: absolute;
+	width: calc(100% - 855px);
+	max-width: 1060px;
+	top: 680px;
+	right: -61px;
+	transform: translate(0, -50%);
+
+	&__container {
+		position: relative;
+		background-image: url('../img/animals-bg.png');
+		background-size: 100%;
+
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+	}
+
+	&__img-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 21.32% 25% 39.43%;
+	}
+
+	&__image {
+		max-height: 100%;
+	}
+
+	&__list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__item {
+		position: absolute;
+		left: 0;
+		width: 50%;
+		top: 50%;
+		transform-origin: 100%;
+
+		@for $i from 1 through 100 {
+			&:nth-child(#{$i}) {
+				transform: rotate(15.8deg * $i - 15deg);
+
+				.animals__item-box {
+					transform: translate(-40%, 0) rotate(15deg - (15.8deg * $i));
+				}
+			}
+		}
+	}
+
+	&__item-box {
+		width: 15.85%;
+		position: absolute;
+		transform-origin: 50% 50%;
+
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+
+		&.active {
+
+			.animals__item-icon-box {
+				background-image: linear-gradient(to bottom, #76a9e3, #3399ff);
+				box-shadow: 
+					0 0 0 12px rgba(#74a9e4, 0.3),
+					0 0 0 33px rgba(#74a9e4, 0.1);
+				border-color: transparent;
+
+				&::before {
+					display: none;
+				}
+			}
+
+			.animals__item-icon {
+				display: none;
+			}
+
+			.animals__item-icon-active {
+				display: block;
+			}
+		}
+	}
+
+	&__item-icon-box, &__item-title {
+		position: absolute;
+	}
+
+	&__item-icon-box {
+		top: 0;
+		left: 0;
+		@include circle(100%);
+		@include flex-center;
+		background-color: #fff;
+		border: 1px solid #eef3f9;
+		box-shadow: 0 0 0 11px #fff;
+		padding: 25%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -12px;
+			left: -12px;
+			right: -12px;
+			bottom: -12px;
+			border: 1px dashed #5fa3ed;
+			border-radius: 50%;
+		}
+	}
+
+	&__item-icon-active {
+		display: none;
+	}
+
+	&__item-title {
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		margin-top: -5px;
+		white-space: nowrap;
+		width: 120px;
+		height: 37px;
+		@include flex-center;
+		font-size: 15px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			box-shadow: 0 7px 10px #e3e6e8;
+			transform: skewX(-15deg);
+			border-radius: 6px;
+		}
+
+		span {
+			position: relative;
+		}
+	}
+}
+
+@media (max-width: 1700px) {
+	.animals {
+
+		&__item {
+
+			@for $i from 1 through 100 {
+				&:nth-child(#{$i}) {
+					transform: rotate(16deg * $i - 22deg);
+
+					.animals__item-box {
+						transform: translate(-40%, 0) rotate(22deg - (16deg * $i));
+					}
+				}
+			}
+		}
+
+		&__item-icon-box {
+			box-shadow: none;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__item-title {
+			font-size: 12px;
+			width: 100px;
+			height: 25px;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.animals {
+		position: static;
+		width: 100%;
+		max-width: none;
+		transform: none;
+		background-color: #fbfbfc;
+		padding-top: 50px;
+
+		&__container {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+} 
+
+@include media-breakpoint-down(md) {
+	.animals {
+
+		&__container {
+			padding-left: 15px;
+			padding-right: 15px;
+			background: none;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__img-box {
+			display: none;
+		}
+
+		&__list {
+			position: static;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			position: static;
+			transform: none !important;
+			width: auto;
+			margin: 0 15px 20px;
+		}
+
+		&__item-box {
+			width: auto;
+			position: static;
+			transform: none !important;
+			display: flex;
+			align-items: center;
+
+			&::before {
+				display: none;
+			}
+
+			&.active {
+
+				.animals__item-icon-box {
+					background: #fff;
+					box-shadow: none;
+					border-color: #eef3f9;
+				}
+
+				.animals__item-icon {
+					display: block;
+				}
+
+				.animals__item-icon-active {
+					display: none;
+				}
+			}
+		}
+
+		&__item-icon-box {
+			position: static;
+			padding: 0;
+			width: 50px;
+			height: 50px;
+			padding: 12px;
+		}
+
+		&__item-title {
+			position: static;
+			transform: none;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

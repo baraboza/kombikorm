@@ -1,0 +1,19 @@
+.button {
+	@include flex-center;
+	background-image: linear-gradient(to bottom, #f08921, #ff6600);
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	width: 232px;
+	height: 67px;
+	border-radius: 50px;
+	box-shadow: 0 8px 12px rgba(#f08921, 0.6);
+	transition: 0.2s;
+	border: none;
+	padding: 0;
+
+	&:hover {
+		transform: translate(0, -2px);
+		box-shadow: 0 10px 15px rgba(#f08921, 0.7);
+	}
+}
