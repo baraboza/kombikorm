@@ -189,6 +189,14 @@
 
 @media (max-width: 1500px) {
 	.animals {
+		width: calc(100% - 600px);
+		top: 630px;
+		right: -50px;
+	}
+} 
+
+@include media-breakpoint-down(lg) {
+	.animals {
 		position: static;
 		width: 100%;
 		max-width: none;
@@ -197,17 +205,9 @@
 		padding-top: 50px;
 
 		&__container {
-			max-width: 800px;
+			max-width: 720px;
 			margin-left: auto;
 			margin-right: auto;
-		}
-	}
-} 
-
-@include media-breakpoint-down(md) {
-	.animals {
-
-		&__container {
 			padding-left: 15px;
 			padding-right: 15px;
 			background: none;
@@ -226,13 +226,19 @@
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
+			margin-left: -8px;
+			margin-right: -8px;
 		}
 
 		&__item {
 			position: static;
 			transform: none !important;
 			width: auto;
-			margin: 0 15px 20px;
+			margin: 0 0 20px;
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding-left: 8px;
+			padding-right: 8px;
 		}
 
 		&__item-box {
@@ -266,19 +272,30 @@
 
 		&__item-icon-box {
 			position: static;
-			padding: 0;
-			width: 50px;
-			height: 50px;
-			padding: 12px;
+			padding: 10px;
+			flex-shrink: 0;
+			margin-right: 5px;
+			width: 45px;
+			height: 45px;
 		}
 
 		&__item-title {
 			position: static;
 			transform: none;
+			width: auto;
 
 			&::before {
 				display: none;
 			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.animals {
+
+		&__container {
+			max-width: 540px;
 		}
 	}
 }

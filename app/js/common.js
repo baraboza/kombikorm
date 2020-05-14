@@ -23,4 +23,17 @@ $('.header__nav-toggle').click(function() {
 	$('.header__nav-list').slideToggle(200);
 });
 
+$('.info__list').slick({
+	dots: true,
+	mobileFirst: true,
+	arrows: false,
+	dotsClass: 'info__slider-dots',
+	responsive: [
+		{
+			breakpoint: 991.98,
+			settings: 'unslick'
+		}
+	]
+});
+
 });

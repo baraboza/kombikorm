@@ -3,7 +3,7 @@
 	background-color: #f1f1f2;
 
 	a:hover {
-		text-decoration: underline;
+		border-bottom: 1px solid #000;
 	}
 
 	&__main {
@@ -76,6 +76,10 @@
 
 		a {
 			margin-left: 16px;
+
+			&:hover {
+				border-bottom: none;
+			}
 		}
 	}
 }
