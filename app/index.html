@@ -11,42 +11,51 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<meta name="theme-color" content="#000">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 	<header class="header">
-		<a href="#" class="header__logo">
-			<img src="img/logo.png" alt="Energy">
-		</a>
-		<p class="header__title">
-			Производство и продажа 
-			кормов для сельхоз
-			животных и птиц в Крыму 
-			и Краснодарском крае
-		</p>
-		<ul class="header__nav-list">
-			<li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Продукция</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Прайс</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и оплата</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Дилерам</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Полезные статьи</a></li>
-			<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-		</ul>
-		<div class="header__time-and-request-call">
-			<p class="header__time">ПН — ПТ: 8:00 - 17:30</p>
-			<a href="#request-call" class="header__request-call js-modal-open">Заказать звонок</a>
+		<div class="header__container container">
+			<a href="#" class="header__logo">
+				<img src="img/logo.png" alt="Energy">
+			</a>
+			<a href="#" class="header__logo-inner">
+				<img src="img/logo-inner.png" alt="Energy">
+			</a>
+			<p class="header__title">
+				Производство и продажа 
+				кормов для сельхоз
+				животных и птиц в Крыму 
+				и Краснодарском крае
+			</p>
+			<ul class="header__nav-list">
+				<li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Продукция</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Прайс</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и оплата</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Дилерам</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Полезные статьи</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+			</ul>
+			<div class="header__time-and-request-call">
+				<p class="header__time">ПН — ПТ: 8:00 - 17:30</p>
+				<a href="#request-call" class="header__request-call js-modal-open">Заказать звонок</a>
+			</div>
+			<div class="header__phone-list-wrap">
+				<span class="header__phone-icon"><i class="fas fa-phone-alt"></i></span>
+				<ul class="header__phone-list">
+					<li class="header__phone-item"><a href="tel:+79787358959" class="header__phone-link">+7 (978) 735-89-59</a></li>
+					<li class="header__phone-item"><a href="tel:+79787358957" class="header__phone-link">+7 (978) 735-89-57</a></li>
+				</ul>
+			</div>
+			<span class="header__nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
 		</div>
-		<ul class="header__phone-list">
-			<li class="header__phone-item"><a href="tel:+79787358959" class="header__phone-link">+7 (978) 735-89-59</a></li>
-			<li class="header__phone-item"><a href="tel:+79787358957" class="header__phone-link">+7 (978) 735-89-57</a></li>
-		</ul>
-		<span class="header__nav-toggle">
-			<span></span>
-			<span></span>
-			<span></span>
-		</span>
 	</header>
 
 	<main>
@@ -135,7 +144,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="https://pngimg.com/uploads/turkey/turkey_PNG58582.png">
+						<div class="animals__item-box" data-image="img/индюк.png">
 							<div class="animals__item-icon-box">
 								<img src="img/инд_1.svg" alt="" class="animals__item-icon">
 								<img src="img/инд.svg" alt="" class="animals__item-icon-active">
@@ -144,7 +153,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="https://pngimg.com/uploads/duck/duck_PNG5011.png">
+						<div class="animals__item-box" data-image="img/утка.png">
 							<div class="animals__item-icon-box">
 								<img src="img/утк_1.svg" alt="" class="animals__item-icon">
 								<img src="img/утк.svg" alt="" class="animals__item-icon-active">
@@ -153,7 +162,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="https://lh3.googleusercontent.com/proxy/7yw7VnBUU6Vh8QOGbdX5eBE45Z67NeqT1VPm21O2DMCj4862FO6iIXKNnBqBEzyBKWIuvIK2F6d0WcI5CBIa2Cjx5NssFPTdysWw">
+						<div class="animals__item-box" data-image="img/несушка.png">
 							<div class="animals__item-icon-box">
 								<img src="img/несушк_1.svg" alt="" class="animals__item-icon">
 								<img src="img/несушк.svg" alt="" class="animals__item-icon-active">
@@ -162,7 +171,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/теленок.png">
 							<div class="animals__item-icon-box">
 								<img src="img/теленок_1.svg" alt="" class="animals__item-icon">
 								<img src="img/теленок.svg" alt="" class="animals__item-icon-active">
@@ -171,7 +180,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/поросенок.png">
 							<div class="animals__item-icon-box">
 								<img src="img/свин_1.svg" alt="" class="animals__item-icon">
 								<img src="img/свин.svg" alt="" class="animals__item-icon-active">
@@ -180,7 +189,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/ероль.png">
 							<div class="animals__item-icon-box">
 								<img src="img/крол_1.svg" alt="" class="animals__item-icon">
 								<img src="img/крол.svg" alt="" class="animals__item-icon-active">
@@ -189,7 +198,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/перепелка.jpg">
 							<div class="animals__item-icon-box">
 								<img src="img/переп_1.svg" alt="" class="animals__item-icon">
 								<img src="img/переп.svg" alt="" class="animals__item-icon-active">
@@ -198,7 +207,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/собака.png">
 							<div class="animals__item-icon-box">
 								<img src="img/собак_1.svg" alt="" class="animals__item-icon">
 								<img src="img/собак.svg" alt="" class="animals__item-icon-active">
@@ -207,7 +216,7 @@
 						</div>
 					</li>
 					<li class="animals__item">
-						<div class="animals__item-box" data-image="img/animals-image-1.png">
+						<div class="animals__item-box" data-image="img/корм.png">
 							<div class="animals__item-icon-box">
 								<img src="img/мешок_1.svg" alt="" class="animals__item-icon">
 								<img src="img/мешок.svg" alt="" class="animals__item-icon-active">
@@ -225,7 +234,7 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<p class="h2">Комбикорма</p>
-							<div class="feed-types__text-article article txt txt-gray">
+							<div class="feed-types__text-article txt txt-gray">
 								<p>Полноценный набор ключевых питательных элементов  может обеспечить только комбинированная смесь, включающая не только белки, жиры и углеводы, но и минерально-витаминные компоненты.</p>
 								<p>На разных этапах жизни  нужна разная пища (комбикорм), соответствующая  потребностям на той или иной стадии роста. Под каждый вид животных разработаны комбикорма, которые объединены в линейки.</p>
 							</div>
@@ -352,7 +361,7 @@
 			</ul>
 		</section>
 
-		<section class="info">
+		<section class="info info--main-page">
 			<div class="container">
 				<p class="info__title h2">Полезная информация</p>
 				<ul class="info__list row">
@@ -451,9 +460,9 @@
 	<div id="request-call" class="modal-wrapper">
 		<div class="modal-wrapper__container">
 			<form class="modal form">
-				<span class="modal__close">x</span>
+				<span class="modal__close"></span>
 				<div class="form__inner">
-					<p class="form__title txt-md">Заказать звонок</p>
+					<p class="form__title txt-md">Обратный звонок</p>
 					<input type="text" class="form__input input" placeholder="Ваше имя">
 					<input type="tel" class="form__input input" placeholder="+7 (___) ___-__-__">
 					<input type="submit" class="form__button button" value="Отправить">

@@ -7,6 +7,7 @@
 	bottom: 0;
 	overflow: auto;
 	background: rgba(0,0,0,0.5);
+	z-index: 2;
 
 	&__container {
 		display: flex;

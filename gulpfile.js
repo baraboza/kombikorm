@@ -37,7 +37,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/slick/slick.min.js'
+		'app/libs/slick/slick.min.js',
+		'app/libs/fancybox-2.1.7/source/jquery.fancybox.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

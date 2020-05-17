@@ -1,9 +1,59 @@
 .article {
 
+	h2 {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 500;
+		color: #000;
+		margin-top: 24px;
+	}
+
 	p {
-		
-		&:nth-child(n + 2) {
-			margin-top: 25px;
+		margin-top: 21px;
+		text-indent: 15px;
+	}
+
+	li {
+		margin-top: 21px;
+		padding-left: 30px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			left: 0;
 		}
+	}
+
+	ol {
+		counter-reset: list;
+	}
+
+	ol > li {
+
+		&::before {
+			counter-increment: list;
+			content: '0' counter(list);
+			top: -1px;
+			font-size: 24px;
+			font-family: 'Bebas Neue', cursive;
+			font-weight: 700;
+			color: #76a9e3;
+		}
+	}
+
+	ul > li {
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 11px;
+			top: 5px;
+			background-image: url('../img/article-ul-li.png');
+		}
+	}
+
+	img {
+		margin-top: 24px;
 	}
 }

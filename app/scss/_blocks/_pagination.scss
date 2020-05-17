@@ -1,0 +1,36 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__prev, &__next {
+		@include hover-opacity;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		font-family: 'Bebas Neue', cursive;
+		font-weight: 700;
+		font-size: 20px;
+
+		li {
+			margin: 0 11px;
+
+			a {
+				@include hover-opacity;
+			}
+
+			&.active {
+
+				a {
+					@include flex-center;
+					@include circle(32px);
+					background-image: linear-gradient(to bottom, #76a9e3, #3399ff);
+					color: #fff;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

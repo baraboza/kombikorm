@@ -3,11 +3,21 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	display: flex;
 	padding: 0 60px;
+	z-index: 2;
+
+	&__container {
+		max-width: none;
+		padding: 0;
+		display: flex;
+	}
 
 	&__logo {
 		margin-top: 8px;
+	}
+
+	&__logo-inner {
+		display: none;
 	}
 
 	&__title {
@@ -54,13 +64,20 @@
 		@include hover-opacity;
 	}
 
-	&__phone-list {
+	&__phone-list-wrap {
 		margin-left: 40px;
+		margin-top: 17px;
+	}
+
+	&__phone-icon {
+		display: none;
+	}
+
+	&__phone-list {
 		font-family: 'Bebas Neue', cursive;
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 26px;
-		margin-top: 17px;
 	}
 
 	&__phone-link {
@@ -72,13 +89,76 @@
 	}
 }
 
+.header--inner-page {
+	background-color: #fff;
+	box-shadow: 0 3px 4px rgba(194,194,195,0.2);
+	padding: 0;
+
+	.header {
+		&__container {
+			max-width: 1170px;
+			padding-left: 15px;
+			padding-right: 15px;
+			align-items: center;
+			height: 80px;
+		}
+
+		&__logo {
+			display: none;
+		}
+
+		&__logo-inner {
+			display: block;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__nav-list {
+			margin-top: 0;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		&__phone-list-wrap {
+			margin-top: 0;
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+		}
+
+		&__phone-icon {
+			@include circle(36px);
+			@include flex-center;
+			font-size: 14px;
+			color: #fff;
+			background-image: linear-gradient(to bottom, #f08921, #ff6600);
+			margin-right: 13px;
+		}
+
+		&__time-and-request-call {
+			display: none;
+		}
+	}
+}
+
 @media (max-width: 1700px) {
 	.header {
 
-		&__phone-list {
+		&__phone-list-wrap {
 			position: absolute;
 			right: 60px;
 			top: 70px;
+		}
+	}
+
+	.header--inner-page {
+
+		.header {
+			&__phone-list-wrap {
+				position: static;
+			}
 		}
 	}
 }
@@ -100,12 +180,15 @@
 
 @include media-breakpoint-down(lg) {
 	.header {
-		padding: 5px 15px;
 		background-color: #fff;
 		box-shadow: 0 5px 10px rgba(4,3,2,.33);
-		align-items: center;
-		flex-wrap: wrap;
-		z-index: 1;
+		padding: 0;	
+
+		&__container {
+			padding: 5px 15px;
+			align-items: center;
+			flex-wrap: wrap;
+		}
 
 		&__logo {
 			width: 80px;
@@ -135,7 +218,7 @@
 			margin-top: 10px;
 		}
 
-		&__phone-list {
+		&__phone-list-wrap {
 			position: static;
 			margin-left: auto;
 			margin-top: 0;
@@ -153,6 +236,32 @@
 				border-radius: 2px;
 				margin-top: 4px;
 				background-color: #000;
+			}
+		}
+	}
+
+	.header--inner-page {
+
+		.header {
+			&__container {
+				height: auto;
+			}
+
+			&__logo {
+				display: block;
+			}
+
+			&__logo-inner {
+				display: none;
+			}
+
+			&__phone-icon {
+				display: none;
+			}
+
+			&__nav-list {
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 	}

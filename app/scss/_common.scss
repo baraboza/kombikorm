@@ -9,6 +9,7 @@ body {
 	min-height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	// font-family: 'Bebas Neue', cursive;
+	padding-top: 80px;
 }
 
 main {
@@ -63,5 +64,11 @@ input, button, textarea {
 				flex-shrink: 0;
 			}
 		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	body {
+		padding-top: 90px;
 	}
 }
