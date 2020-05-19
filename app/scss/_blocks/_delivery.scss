@@ -1,0 +1,149 @@
+.delivery {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-size: 100%;
+		background-image: url('../img/circle-bg.png');
+		width: 882px;
+		height: 882px;
+		top: -102px;
+		right: -350px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 55px;
+		right: -210px;
+		width: 600px;
+		height: 600px;
+		background-image: url('../img/delivery-image-bg.png');
+	}
+
+	&__title {
+		padding: 40px 0 25px;
+	}
+
+	&__box {
+		margin: 0 -15px;
+		background-color: #fbfbfc;
+		padding: 90px 45px 45px;
+	}
+
+	&__how-order-list {
+		margin: 0 -18px;
+		max-width: 880px;
+		position: relative;
+		z-index: 1;
+
+		.how-order {
+			&__item {
+				flex-basis: 33.33333%;
+				max-width: 33.33333%;
+				padding: 0 18px;
+				
+				@for $i from 1 through 3 {
+					&:nth-child(#{$i}) {
+
+						.how-order__number {
+							background-image: url('../img/0#{$i}-delivery.png');
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		margin: 82px -18px 0;
+		max-width: 880px;
+		position: relative;
+	}
+
+	&__info-col {
+		padding: 0 18px;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	&__pay-types {
+
+		.about-info {
+			&__item-content {
+				padding: 68px 30px 54px;
+			}
+		}
+	}
+
+	&__info-free {
+		margin-left: 60px;
+		font-size: 36px;
+		line-height: 1;
+		font-family: 'Bebas Neue', cursive;
+		font-weight: 700;
+		color: #76a9e3;
+
+		span {
+			font-size: 60px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.delivery {
+
+		&::before, &::after {
+			display: none;
+		}
+
+		&__box {
+			padding: 30px 18px;
+		}
+
+		&__how-order-list {
+
+			.how-order {
+				&__item {
+					flex-basis: 100%;
+					max-width: none;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.delivery {
+
+		&__info {
+			flex-wrap: wrap;
+		}
+
+		&__info-col {
+			flex-basis: 100%;
+			max-width: none;
+		}
+
+		&__info-free {
+			margin: 40px auto 0;
+			text-align: center;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.delivery {
+
+		&__info-free {
+			font-size: 28px;
+
+			span {
+				font-size: 40px;
+			}
+		}
+	}
+}

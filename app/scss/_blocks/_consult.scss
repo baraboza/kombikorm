@@ -62,6 +62,10 @@
 	}
 }
 
+.consult--delivery {
+	position: relative;
+}
+
 @include media-breakpoint-down(lg) {
 	.consult {
 

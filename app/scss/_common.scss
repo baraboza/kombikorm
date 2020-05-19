@@ -48,7 +48,8 @@ input, button, textarea {
 		}
 
 		span {
-			display: inline-flex;
+			display: flex;
+			justify-content: center;
 			align-items: center;
 			cursor: pointer;
 			font-size: 11px;

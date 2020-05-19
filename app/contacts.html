@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<meta name="theme-color" content="#000">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header header--inner-page">
+		<div class="header__container container">
+			<a href="#" class="header__logo">
+				<img src="img/logo.png" alt="Energy">
+			</a>
+			<a href="#" class="header__logo-inner">
+				<img src="img/logo-inner.png" alt="Energy">
+			</a>
+			<p class="header__title">
+				Производство и продажа 
+				кормов для сельхоз
+				животных и птиц в Крыму 
+				и Краснодарском крае
+			</p>
+			<ul class="header__nav-list">
+				<li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Продукция</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Прайс</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и оплата</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Дилерам</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Полезные статьи</a></li>
+				<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+			</ul>
+			<div class="header__time-and-request-call">
+				<p class="header__time">ПН — ПТ: 8:00 - 17:30</p>
+				<a href="#request-call" class="header__request-call js-modal-open">Заказать звонок</a>
+			</div>
+			<div class="header__phone-list-wrap">
+				<span class="header__phone-icon"><i class="fas fa-phone-alt"></i></span>
+				<ul class="header__phone-list">
+					<li class="header__phone-item"><a href="tel:+79787358959" class="header__phone-link">+7 (978) 735-89-59</a></li>
+					<li class="header__phone-item"><a href="tel:+79787358957" class="header__phone-link">+7 (978) 735-89-57</a></li>
+				</ul>
+			</div>
+			<span class="header__nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</div>
+	</header>
+
+	<main>
+		<section class="contacts container">
+			<h1 class="contacts__title h2">Контакты</h1>
+			<div class="contacts__box">
+				<div class="contacts__main">
+					<div class="contacts__info card">
+						<div class="contacts__info-content card__content">
+							<div class="contacts__info-img-box">
+								<img src="img/logo.png" alt="Energy">
+							</div>
+							<div class="contacts__info-text-box">
+								<p class="contacts__info-title">«Красногвардейский комбикормовый завод»</p>
+								<p class="contacts__info-address txt-md">
+									Адрес: 297000, Республика Крым, <br>
+									пгт Красногвардейское, ул. Островского, 11б
+								</p>
+							</div>
+						</div>
+					</div>
+					<ul class="contacts__person-list txt-md">
+						<li class="contacts__person-item">
+							<div class="contacts__person-card card">
+								<div class="contacts__person-content card__content">
+									<div class="contacts__person-img-box">
+										<img src="img/contacts-person1.jpg" alt="">
+									</div>
+									<p class="contacts__person-title">Иванов Александр</p>
+									<p class="contacts__person-desc">менеджер по продажам</p>
+									<p class="contacts__person-tel">
+										<a href="tel:+79787358959">+7 (978) 735-89-59</a>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="contacts__person-item">
+							<div class="contacts__person-card card">
+								<div class="contacts__person-content card__content">
+									<div class="contacts__person-img-box">
+										<img src="img/contacts-person2.jpg" alt="">
+									</div>
+									<p class="contacts__person-title">Иванов Александр</p>
+									<p class="contacts__person-desc">менеджер по продажам</p>
+									<p class="contacts__person-tel">
+										<a href="tel:+79787358957">+7 (978) 735-89-57</a>
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts__form-wrap">
+					<form class="contacts__form form">
+						<div class="form__inner">
+							<p class="form__title">Обратная связь</p>
+							<input type="text" class="form__input input" placeholder="Ваше имя">
+							<input type="email" class="form__input input" placeholder="Ваша почта">
+							<textarea class="form__input textarea" placeholder="Сообщение"></textarea>
+							<input type="submit" class="form__button button" value="Отправить">
+							<div class="form__consent-wrap">
+								<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="contacts__map" id="map"></div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#">О нас</a></li>
+						<li class="footer__menu-item"><a href="#">Прайс</a></li>
+						<li class="footer__menu-item"><a href="#">Доставка и оплата</a></li>
+						<li class="footer__menu-item"><a href="#">Дилерам</a></li>
+						<li class="footer__menu-item"><a href="#">Полезные статьи</a></li>
+						<li class="footer__menu-item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__col-catalog col-md-6 col-lg-4">
+					<p class="footer__title">Продукция</p>
+					<ul class="footer__animals-list txt">
+						<li class="footer__animals-item"><a href="#">Для бройлеров</a></li>
+						<li class="footer__animals-item"><a href="#">Для индеек</a></li>
+						<li class="footer__animals-item"><a href="#">Для телят</a></li>
+						<li class="footer__animals-item"><a href="#">Для кролей</a></li>
+						<li class="footer__animals-item"><a href="#">Для несушек</a></li>
+						<li class="footer__animals-item"><a href="#">Для перепелок </a></li>
+						<li class="footer__animals-item"><a href="#">Для свиней</a></li>
+						<li class="footer__animals-item"><a href="#">Для уток</a></li>
+					</ul>
+				</div>
+				<div class="footer__col-phones col-md-6 col-lg-3">
+					<p class="footer__title">Телефоны:</p>
+					<ul class="footer__phone-list txt">
+						<li class="footer__phone-item"><a href="tel:+79787358959">+7 (978) 735-89-59</a></li>
+						<li class="footer__phone-item"><a href="tel:+79787358957">+7 (978) 735-89-57</a></li>
+					</ul>
+					<p class="footer__title footer__title--time">Режим работы:</p>
+					<p class="footer__time txt">ПН — ПТ 8:00-18:00</p>
+				</div>
+				<div class="footer__col-address col-md-6 col-lg-2">
+					<p class="footer__title">Адрес:</p>
+					<p class="footer__address txt">
+						Республика Крым,<br>
+						пгт Красногвардейское,<br>
+						ул. Островского, 11б  
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__policy"><a href="#" target="_blank">Политика конфиденциальности</a></p>
+				<p class="footer__copyright">г. Симферополь © Copyright  2020 г.</p>
+				<p class="footer__madein">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" height="22" alt="Sheer"></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="request-call" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<span class="modal__close"></span>
+				<div class="form__inner">
+					<p class="form__title txt-md">Обратный звонок</p>
+					<input type="text" class="form__input input" placeholder="Ваше имя">
+					<input type="tel" class="form__input input" placeholder="+7 (___) ___-__-__">
+					<input type="submit" class="form__button button" value="Отправить">
+					<div class="form__consent-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=bee5a468-d693-4038-a644-44be6dee59f0&lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		function init(){
+			var location = [45.509550, 34.301019];
+			var myMap = new ymaps.Map(
+				"map", 
+				{
+					center: location,
+					zoom: 17,
+					controls: []
+				}
+			);
+			myMap.behaviors.disable('scrollZoom');
+			var myPlacemark = new ymaps.Placemark(location, {}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/placemark.png',
+				iconImageSize: [22, 29],
+				iconImageOffset: [-11,-29]
+			});
+			myMap.geoObjects.add(myPlacemark);
+		}
+	</script>
+</body>
+</html>

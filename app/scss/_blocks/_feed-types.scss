@@ -28,6 +28,8 @@
 		height: 100%;
 		box-shadow: 0 3px 4px rgba(194,194,195,0.2);
 		transition: box-shadow 0.2s;
+		position: relative;
+		z-index: 2;
 
 		&:hover {
 			box-shadow: 0 5px 8px rgba(194,194,195,0.4);
