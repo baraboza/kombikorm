@@ -38,4 +38,17 @@ $('.info--main-page .info__list').slick({
 
 $('.fancybox').fancybox();
 
+$('.category__tab-content').hide();
+$('.category__tab-content:first').show();
+$('.category__tabs li:first').addClass('active');
+$('.category__tabs li').click(function(event) {
+	$('.category__tabs li').removeClass('active');
+	$(this).addClass('active');
+	$('.category__tab-content').hide();
+
+	var selectTab = $(this).find('a').attr("href");
+
+	$(selectTab).fadeIn();
+});
+
 });

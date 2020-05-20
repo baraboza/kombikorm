@@ -6,6 +6,7 @@
 	color: #666;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 
 	li {
 		margin-right: 10px;
@@ -31,4 +32,8 @@
 			text-decoration: underline;
 		}
 	}
+}
+
+.crumbs--align-left {
+	justify-content: flex-start;
 }

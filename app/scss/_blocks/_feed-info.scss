@@ -59,6 +59,25 @@
 	}
 }
 
+.feed-info--category {
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+	.feed-info {
+		&__list {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		&__item {
+
+			&:nth-child(n + 2) {
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.feed-info {
 
@@ -83,5 +102,10 @@
 				left: -22px;
 			}
 		}
+	}
+
+	.feed-info--category {
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
