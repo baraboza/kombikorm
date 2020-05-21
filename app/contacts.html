@@ -215,7 +215,11 @@
 				}
 			);
 			myMap.behaviors.disable('scrollZoom');
-			var myPlacemark = new ymaps.Placemark(location, {}, {
+			var myPlacemark = new ymaps.Placemark(location, {
+				balloonContentHeader: "«Красногвардейский комбикормовый завод»",
+				balloonContentBody: "297000, Республика Крым, пгт Красногвардейское, ул. Островского, 11б",
+				hintContent: "Показать адрес"
+			}, {
 				iconLayout: 'default#image',
 				iconImageHref: 'img/placemark.png',
 				iconImageSize: [22, 29],

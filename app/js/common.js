@@ -51,4 +51,17 @@ $('.category__tabs li').click(function(event) {
 	$(selectTab).fadeIn();
 });
 
+$('.dealers__areas-item-title').click(function() {
+	if ($(this).hasClass('active')) {
+		$(this).removeClass('active');
+		$(this).parents('.dealers__areas-item').find('.dealers__areas-item-content').slideUp(200);
+	} else {
+		$('.dealers__areas-item-content').slideUp(200);
+		$('.dealers__areas-item-title.active').removeClass('active');
+		$(this).addClass('active');
+		$(this).parents('.dealers__areas-item').find('.dealers__areas-item-content').slideDown(200);
+	}
+	
+});
+
 });

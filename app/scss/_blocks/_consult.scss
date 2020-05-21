@@ -66,6 +66,21 @@
 	position: relative;
 }
 
+.consult--dealers {
+
+	.consult {
+
+		&__left {
+			margin-top: 65px;
+		}
+
+		&__title {
+			max-width: 680px;
+			padding-right: 30px;
+		}
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.consult {
 
@@ -141,6 +156,20 @@
 
 			.form__inner {
 				padding: 25px;
+			}
+		}
+	}
+
+	.consult--dealers {
+
+		.consult {
+
+			&__left {
+				margin-top: 0;
+			}
+
+			&__title {
+				padding-right: 0;
 			}
 		}
 	}

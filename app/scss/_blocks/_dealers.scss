@@ -1,0 +1,250 @@
+.dealers {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-size: 100%;
+		background-image: url('../img/circle-bg.png');
+		width: 882px;
+		height: 882px;
+		top: -102px;
+		right: -350px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 55px;
+		right: -210px;
+		width: 600px;
+		height: 600px;
+		background-image: url('../img/dealers-circle-bg.png');
+	}
+
+	&__init {
+		margin-top: 25px;
+		background-color: #fbfbfc;
+		padding: 45px 35px 50px;
+	}
+
+	&__init-text {
+		max-width: 500px;
+		position: relative;
+		z-index: 1;
+
+		p {
+
+			&:nth-child(n + 2) {
+				margin-top: 24px;
+			}
+		}
+	}
+
+	&__services {
+		margin-top: 20px;
+		max-width: 705px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__services-content {
+		padding: 35px 25px;
+	}
+
+	&__subtitle {
+		font-family: 'Bebas Neue', cursive;
+		font-size: 36px;
+		font-weight: 700;
+		color: #76a9e3;
+	}
+
+	&__services-desc {
+		font-weight: 500;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+
+	&__services-list, &__require-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+		font-weight: 700;
+
+		li {
+			position: relative;
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding-right: 15px;
+			padding-left: 33px;
+			margin-top: 35px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				@include circle(7px);
+				background-color: #f5821f;
+				left: 15px;
+				top: 7px;
+			}
+		}
+	}
+
+	&__require {
+		padding: 45px 65px;
+	}
+
+	&__require-list {
+
+		li {
+			flex-basis: 33.33333%;
+			max-width: 33.33333%;
+
+			&::before {
+				top: 9px;
+			}
+		}
+	}
+
+	&__areas {
+		background-color: #fbfbfc;
+		padding: 28px 22px 26px;
+
+		.dealers__subtitle {
+			margin-left: 22px;
+		}
+	}
+
+	&__areas-list {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	&__areas-item {
+		padding: 0 15px;
+		flex: 0 0 50%;
+		max-width: 50%;
+
+		&:nth-child(n + 3) {
+			margin-top: 10px;
+		}
+	}
+
+	&__areas-item-title {
+		padding: 17px 13px 17px 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #fff;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			width: 10px;
+			height: 6px;
+			background-image: url('../img/dealers-areas-arrow-down.png');
+			transition: transform 0.2s;
+		}
+
+		&.active::after {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__areas-item-content {
+		display: none;
+		background-color: #fff;
+		padding: 3px 20px 22px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.dealers {
+
+		&__require-list {
+
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.dealers {
+
+		&::before, &::after {
+			display: none;
+		}
+
+		&__init {
+			padding: 15px 15px 30px;
+		}
+
+		&__services-content {
+			padding: 15px;
+		}
+
+		&__services-list {
+
+			br {
+				display: none;
+			}
+		}
+
+		&__require {
+			padding: 30px 0;
+		}
+
+		&__areas {
+			padding: 15px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.dealers {
+
+		&__subtitle {
+			font-size: 28px;
+			text-align: center;
+		}
+
+		&__areas {
+
+			.dealers__subtitle {
+				margin-left: 0;
+			}
+		}
+
+		&__services-list, &__require-list {
+
+			li {
+				flex-basis: 100%;
+				max-width: none;
+				margin-top: 20px;
+			}
+		}
+
+		&__areas-list {
+			margin-top: 20px;
+		}
+
+		&__areas-item {
+			flex-basis: 100%;
+			max-width: none;
+
+			&:nth-child(n + 2) {
+				margin-top: 10px;
+			}
+		}
+	}
+}
